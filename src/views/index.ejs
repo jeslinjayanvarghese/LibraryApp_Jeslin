@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1><%=title%>
+          <p class="lead"> "If you have a garden and a library, you have everything you need." Marcus Tullius Cicero</p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src="https://upload.wikimedia.org/wikipedia/en/f/f6/Sidney_Sheldon.jpg" style="width:100px;height:100px" class="img-circle"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>"Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and achieve, and contribute to improving our quality of life."</h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default">
+                    Sidney Sheldon</span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">(1917-2007. American writer and producer) <a href="#" class="text-muted">Read More</a></small>
+                  </h4></div>
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src="data:image/jpeg;base64,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" style="width:100px;height:100px" class="img-circle"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>"When in doubt go to the library."</h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default">
+                    J.K. Rowling </span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">
+                    (b. 1965. British novelist, screenwriter, and producer, best known for writing the Harry Potter fantasy series) • <a href="#" class="text-muted">Read More</a></small>
+                  </h4></div>
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+                  
+          <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/06/03/Pictures/_68046266-a58e-11ea-86c3-c49c142691bb.jpg" style="width:100px;height:100px" class="img-circle"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>"Libraries were full of ideas – perhaps the most dangerous and powerful of all weapons."</h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default">Sarah J. Maas </span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">(b. 1986. American fantasy author) in her novel Throne of Glass. • <a href="#" class="text-muted">Read More</a></small>
+                  </h4></div>
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src="https://into-prodweb.s3.amazonaws.com/uploads/2021/09/gettyimages-1163038895.jpg" style="width:100px;height:100px" class="img-circle"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>"You want weapons? We’re in a library. Books are the best weapon in the world. This room’s the greatest arsenal we could have. Arm yourself!"</h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default">Russell T. Davies </span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">(b. 1963. Welsh screenwriter and television producer) in science fiction series Doctor Who. • <a href="#" class="text-muted">Read More</a></small>
+                  </h4></div>
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+          
+          <div class="row">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src="https://literature.britishcouncil.org/assets/Uploads/writers/_resampled/FillWyI4NDAiLCI4NDAiXQ/Neil-Gaiman-c-Kimberley-Butler-web.jpg" style="width:100px;height:100px" class="img-circle"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>"Google can bring you back 100,000 answers, a librarian can bring you back the right one." </h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default">Neil Gaiman </span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">(b. 1960. English author of short fiction, novels, comic books, graphic novels, audio theatre, and films) • <a href="#" class="text-muted">Read More</a></small>
+                  </h4></div>
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+          <hr>
+          <!--/stories-->
+          
+          
+          <a href="/" class="btn btn-primary pull-right btnNext">Back to Home <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
